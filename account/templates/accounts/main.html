@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyRiXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'csss/bootstrap.css' %} ">
-
+    <link rel="stylesheet" type="text/css" href="{% static '/csss/main.css' %}">
 </head>
 
 <body>
     {% include 'accounts/narbar.html' %}
-
-    {% block content %}
-
-
-    {% endblock %}
+    <div class=" contanier-fluid">
+        {% block content %}
 
 
+        {% endblock %}
+
+    </div>
 
     <hr>
     <h5>Our footer</h5>
